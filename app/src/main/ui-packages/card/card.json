@@ -1,0 +1,151 @@
+{
+  "name": "card",
+  "version": 32,
+  "source-key": {
+    "type": "figma",
+    "file": "lNT7HC5gpbfA9xlaly7lFH",
+    "node": "2:12",
+    "version": "2528307000"
+  },
+  "default": "card",
+  "design": {
+    "atoms": [
+      {
+        "type": "group",
+        "id": "top_level",
+        "root": "true"
+      },
+      {
+        "type": "text",
+        "id": "title"
+      },
+      {
+        "type": "text",
+        "id": "desc"
+      }
+    ],
+    "modes": {
+      "card": {
+        "rules": [
+          {
+            "id": "top_level",
+            "padding": {
+              "left": "10.0",
+              "top": "11.0",
+              "right": "10.0",
+              "bottom": "11.0"
+            },
+            "border-radius": "4.0",
+            "drop-shadow": {
+              "color": {
+                "alpha": "0.24705882352941178",
+                "hue": "0.0",
+                "saturation": "0.0",
+                "value": "0.0"
+              },
+              "blur": "4.0",
+              "offset-x": "0.0",
+              "offset-y": "4.0",
+              "spread": "0.0",
+              "blend-mode": "normal"
+            },
+            "tap-handler": "$onJokeClick",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "shrink"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "children": [
+              "title",
+              "desc"
+            ],
+            "item-spacing": "3.0",
+            "background-color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.8509803921568627"
+            },
+            "clip-content": "false"
+          },
+          {
+            "id": "title",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.0"
+            },
+            "text-content": "$title",
+            "overflow": "visible",
+            "text-align": "left",
+            "line-height": "1.2102272851126534",
+            "typeface": "Inter"
+          },
+          {
+            "id": "desc",
+            "size-constraints": {
+              "width-constraints": {
+                "sizing-mode": "fixed",
+                "value": "209.0"
+              },
+              "height-constraints": {
+                "sizing-mode": "shrink"
+              }
+            },
+            "font-weight": "300.0",
+            "color": {
+              "alpha": "1.0",
+              "hue": "0.0",
+              "saturation": "0.0",
+              "value": "0.00784313725490196"
+            },
+            "text-content": "$desc",
+            "overflow": "visible",
+            "max-lines": "-1",
+            "text-align": "left",
+            "text-size": "12.0",
+            "line-height": "1.2102272510528564",
+            "typeface": "Inter"
+          }
+        ]
+      }
+    }
+  },
+  "parameters": {
+    "onJokeClick": {
+      "data-type": "void-callback",
+      "required": false,
+      "description": "onclick handler"
+    },
+    "title": {
+      "data-type": "text",
+      "required": false,
+      "description": "title text"
+    },
+    "desc": {
+      "data-type": "text",
+      "required": false,
+      "description": "desc text"
+    }
+  },
+  "previews": [
+    {
+      "design": "card",
+      "size": {
+        "width": 229.0,
+        "height": 102.0
+      },
+      "parameters": {
+        "title": "Title",
+        "desc": "Lorem ipsum dolor sit amet,\nconsectetur adipiscing elit, \nsed do eiusmod tempor incididunt\n ut labore et dolore magna aliqua."
+      }
+    }
+  ],
+  "adin-component-search-paths": [],
+  "image-search-paths": [],
+  "vector-search-paths": []
+}
